@@ -90,8 +90,8 @@ ctors_done:
   csrw mie,a0
   li a0, 0x1808     //1808 enable interrupts
   csrw mstatus,a0
+
   call main
-  j 0x1000000
 infinitLoop:
   j infinitLoop
 
